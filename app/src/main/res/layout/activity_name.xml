@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NameActivity"
+    android:orientation="vertical"
+    android:background="@drawable/ic_background"
+    android:gravity="center">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="1"
+        android:rowCount="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_logo">
+            </ImageView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white"
+                android:text="Please enter your name">
+            </TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:boxStrokeColor="@color/purple_700"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:textColor="@color/blueDark"
+                    android:textColorHint="@color/blueDark">
+                </androidx.appcompat.widget.AppCompatEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:text="Confirm"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="10dp">
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1">
+        </LinearLayout>
+
+    </GridLayout>
+
+</LinearLayout>

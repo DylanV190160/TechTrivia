@@ -6,15 +6,75 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@drawable/ic_background">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TechTrivia"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="1"
+        android:rowCount="4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:text="Welcome">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="Test your technology knowledge.">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_logo">
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TECH TRIVIA"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:layout_marginTop="10dp">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_play"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:text="Play"
+                android:textStyle="bold"
+                android:textSize="20sp">
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1">
+        </LinearLayout>
+    </GridLayout>
 
 </LinearLayout>
