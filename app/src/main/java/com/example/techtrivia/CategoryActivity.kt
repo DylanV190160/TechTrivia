@@ -22,6 +22,6 @@ class CategoryActivity : AppCompatActivity() {
         Log.i("QuestionsList: ", "${questionsList.size}")
 
         //Set TextView to userName
-        tv_greeting.text = "Hello " + userName + ", There is a total of ${questionsList.size} questions for you to answer."
+        tv_greeting.text = "Hello " + userName
     }
 }

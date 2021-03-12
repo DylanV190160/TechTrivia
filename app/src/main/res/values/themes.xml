@@ -14,7 +14,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <!-- Custom Theme -->
+    <!-- NoActionBar Theme -->
     <style name="NoActionBarTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/blue</item>
@@ -43,5 +43,6 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
         <!-- Customize your theme here. -->
     </style>
+
 
 </resources>

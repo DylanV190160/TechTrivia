@@ -18,7 +18,6 @@ class NameActivity : AppCompatActivity() {
         //Make FullScreen
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
-
         //Confirm button click
         btn_confirm.setOnClickListener(){
 
