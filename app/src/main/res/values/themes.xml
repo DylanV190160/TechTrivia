@@ -30,7 +30,7 @@
     </style>
 
     <!-- ActionBar Theme - Questions -->
-    <style name="QuestionsTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="QuestionsTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/blue</item>
         <item name="colorPrimaryVariant">@color/blueDark</item>
@@ -43,6 +43,5 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
         <!-- Customize your theme here. -->
     </style>
-
 
 </resources>

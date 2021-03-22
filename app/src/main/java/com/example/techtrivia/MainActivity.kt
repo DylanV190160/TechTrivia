@@ -8,21 +8,20 @@ import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
-        //Play Button onClickListener - Navigate to NameActivity
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
         val button = findViewById<Button>(R.id.btn_play)
+
+        //Play Button onClickListener - Navigate to NameActivity
         button.setOnClickListener{
             val intent = Intent(this, NameActivity::class.java)
+
             startActivity(intent)
         }
-
     }
 }

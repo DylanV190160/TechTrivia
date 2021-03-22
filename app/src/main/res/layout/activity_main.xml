@@ -62,14 +62,15 @@
             android:layout_rowWeight="1"
             android:gravity="center">
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_play"
-                android:layout_width="225dp"
-                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Play"
                 android:textStyle="bold"
                 android:textSize="20sp">
-            </Button>
+            </com.google.android.material.button.MaterialButton>
+
         </LinearLayout>
         <LinearLayout
             android:layout_columnWeight="1"

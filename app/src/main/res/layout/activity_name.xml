@@ -57,30 +57,29 @@
             </TextView>
 
             <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                 android:layout_width="225dp"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
-                app:boxStrokeColor="@color/purple_700"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                android:backgroundTint="@color/pink"
+                app:boxStrokeWidth="3dp"
+                app:boxStrokeColor="@color/teal"
+                app:boxBackgroundMode="outline">
 
-                <androidx.appcompat.widget.AppCompatEditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Name"
-                    android:textColor="@color/blueDark"
-                    android:textColorHint="@color/blueDark">
-                </androidx.appcompat.widget.AppCompatEditText>
+                    android:hint="Name">
+                </com.google.android.material.textfield.TextInputEditText>
 
             </com.google.android.material.textfield.TextInputLayout>
             <Button
                 android:id="@+id/btn_confirm"
                 android:layout_width="225dp"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:text="Confirm"
                 android:textSize="18sp"
-                android:textStyle="bold"
-                android:padding="10dp">
+                android:textStyle="bold">
             </Button>
         </LinearLayout>
 

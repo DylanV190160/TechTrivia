@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:text="This will be a question"
             android:gravity="center"
-            android:textSize="18dp"
+            android:textSize="24sp"
             android:textStyle="bold"
             android:textColor="@color/pink"
             android:layout_marginTop="30dp">
@@ -106,7 +106,7 @@
         </RadioGroup>
 
         <Button
-            android:id="@+id/btn_next"
+            android:id="@+id/btn_next_people"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Next"

@@ -11,46 +11,45 @@ import kotlinx.android.synthetic.main.activity_device_question_two.*
 
 class DeviceQuestionTwoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_device_question_two)
 
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
-        val userName = intent.getStringExtra(Constants.USER_NAME)
-        val deviceQuestionsList = Constants.getDeviceQuestions()
-        val deviceQuestion = deviceQuestionsList[1]
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_device_question_two)
 
-        //set question number and array
+        var deviceCorrectAnswers = intent.getIntExtra(Constants.CORRECT_ANSWERS_DEVICE, 0)
+
+        val deviceQuestionsList = Constants.getDeviceQuestions()
         val questionNumber: Int = 2
-        deviceQuestionsList[questionNumber-1]
+        val question: Question = deviceQuestionsList[1]
 
         //Set UI elements
-        tv2_question_device.text = deviceQuestion.question
-        rb2_answer_one_device.text = deviceQuestion.optionOne
-        rb2_answer_two_device.text = deviceQuestion.optionTwo
-        rb2_answer_three_device.text = deviceQuestion.optionThree
-        rb2_answer_four_device.text = deviceQuestion.optionFour
+        tv2_question_device.text = question.question
+        rb2_answer_one_device.text = question.optionOne
+        rb2_answer_two_device.text = question.optionTwo
+        rb2_answer_three_device.text = question.optionThree
+        rb2_answer_four_device.text = question.optionFour
         pb2_progressBar_device.progress = questionNumber
-        tv2_progress_device.text = questionNumber.toString() + "/" + deviceQuestionsList.size.toString()
+        tv2_progress_device.text = "2" + "/" + deviceQuestionsList.size
 
         var answers: RadioButton
-        var correctAnswersDevice: Int = 0
 
         btn2_next_device.setOnClickListener{
+
             var id: Int = rg2_options_device.checkedRadioButtonId
 
-            if (id != -1) {
+            if (id!=-1) {
 
                 answers = findViewById(id)
 
                 Toast.makeText(this, "Checked answer: ${answers.text}", Toast.LENGTH_SHORT).show()
 
-                if (answers.text == deviceQuestion.optionOne) {
-                    correctAnswersDevice++
+                if (answers.text === question.optionOne) {
+                    deviceCorrectAnswers++
                 }
 
-                val intent = Intent(this, DeviceQuestionThreeActivity::class.java)
-                intent.putExtra(Constants.CORRECT_ANSWERS_PEOPLE, correctAnswersDevice)
+                intent = Intent(this, DeviceQuestionThreeActivity::class.java)
+                intent.putExtra(Constants.CORRECT_ANSWERS_DEVICE, deviceCorrectAnswers)
                 startActivity(intent)
                 finish()
 

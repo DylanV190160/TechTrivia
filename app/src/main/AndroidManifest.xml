@@ -8,57 +8,80 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
-        <activity android:name=".ResultsActivity"
-            android:label="Results"
+        <activity
+            android:name=".TermsResultsActivity"
+            android:label="Terms Results"
             android:screenOrientation="portrait"
             android:theme="@style/QuestionsTheme"
             android:windowSoftInputMode="adjustResize">
+
         </activity>
-        <activity android:name=".TermsQuestionThreeActivity"
+        <activity
+            android:name=".PeopleResultsActivity"
+            android:label="People Results"
+            android:screenOrientation="portrait"
+            android:theme="@style/QuestionsTheme"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".DeviceResultsActivity"
+            android:label="Device Results"
+            android:screenOrientation="portrait"
+            android:theme="@style/QuestionsTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".TermsQuestionThreeActivity"
             android:label="Terms Question 3"
             android:screenOrientation="portrait"
             android:theme="@style/QuestionsTheme"
-            android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".TermsQuestionTwoActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".TermsQuestionTwoActivity"
             android:label="Terms Question 2"
             android:screenOrientation="portrait"
             android:theme="@style/QuestionsTheme"
-            android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".TermsQuestionOneActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".TermsQuestionOneActivity"
             android:label="Terms Question 1"
             android:screenOrientation="portrait"
             android:theme="@style/QuestionsTheme"
-            android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".PeopleQuestionThreeActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".PeopleQuestionThreeActivity"
             android:label="People Question 3"
             android:screenOrientation="portrait"
             android:theme="@style/QuestionsTheme"
-            android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".PeopleQuestionTwoActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".PeopleQuestionTwoActivity"
             android:label="People Question 2"
             android:screenOrientation="portrait"
             android:theme="@style/QuestionsTheme"
-            android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".PeopleQuestionOneActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".PeopleQuestionOneActivity"
             android:label="People Question 1"
             android:screenOrientation="portrait"
             android:theme="@style/QuestionsTheme"
-            android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".DeviceQuestionThreeActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".DeviceQuestionThreeActivity"
             android:label="Device Question 3"
             android:screenOrientation="portrait"
             android:theme="@style/QuestionsTheme"
-            android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".DeviceQuestionTwoActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".DeviceQuestionTwoActivity"
             android:label="Device Question 2"
             android:screenOrientation="portrait"
             android:theme="@style/QuestionsTheme"
-            android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".DeviceQuestionOneActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".DeviceQuestionOneActivity"
             android:label="Device Question 1"
             android:screenOrientation="portrait"
             android:theme="@style/QuestionsTheme"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".CategoryActivity"
             android:screenOrientation="portrait"

@@ -1,34 +1,31 @@
 package com.example.techtrivia
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.AlarmClock.EXTRA_MESSAGE
-import android.util.Log
 import android.view.View
-import android.widget.TextView
+import android.widget.Button
 import kotlinx.android.synthetic.main.activity_category.*
 
 class CategoryActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_category)
 
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
-        //Get the UI element
-        val tv_greeting = findViewById<TextView>(R.id.tv_greeting)
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_category)
 
-        //Get intent extra info
-        val userName = intent.getStringExtra(EXTRA_MESSAGE)
-
-        //Get Questions
-//        val questionsList = Constants.getQuestions()
-//        Log.i("QuestionsList: ", "${questionsList.size}")
+        //Shared Preferences
+        val sharedPreferences = getSharedPreferences("sharedPref", Context.MODE_PRIVATE)
+        val userName = sharedPreferences.getString(Constants.USER_NAME, "Not Found")
 
         //Set TextView to userName
         tv_greeting.text = "Hello " + userName
 
+        val btn_people_category = findViewById<Button>(R.id.btn_people_category)
+        val btn_terms_category = findViewById<Button>(R.id.btn_terms_category)
+        val btn_device_category = findViewById<Button>(R.id.btn_device_category)
         // PEOPLE
         btn_people_category.setOnClickListener{
             val intent = Intent(this, PeopleQuestionOneActivity::class.java)

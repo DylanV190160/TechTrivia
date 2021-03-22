@@ -2,10 +2,10 @@ package com.example.techtrivia
 
 object Constants {
     const val USER_NAME : String = "userName"
-    const val WRONG_ANSWERS : String = "wrongAnswers"
-    const val CORRECT_ANSWERS_PEOPLE : String = "correctAnswersPeople"
-    const val CORRECT_ANSWERS_DEVICE : String = "correctAnswersDevice"
-    const val CORRECT_ANSWERS_TERMS : String = "correctAnswersTerms"
+    const val CORRECT_ANSWERS_PEOPLE : String = "peopleCorrectAnswers"
+    const val CORRECT_ANSWERS_DEVICE : String = "deviceCorrectAnswers"
+    const val CORRECT_ANSWERS_TERMS : String = "termsCorrectAnswers"
+
 
     // PEOPLE IN TECH QUESTION LIST
     fun getPeopleQuestions(): ArrayList<Question>{
@@ -15,18 +15,16 @@ object Constants {
         val peopleQue1 = Question(
                 1,
                 "Who is the current CEO of Microsoft Corporation?",
-                R.drawable.ic_logo,
                 "Bill Murray",
                 "Bill Nye",
-                "Satya Nadella",
+                "Satya Nadella", //Correct
                 "Bill Gates"
         )
 
         val peopleQue2 = Question(
                 2,
                 "Who was the first programmer?",
-                R.drawable.ic_logo,
-                "Ada Lovelace",
+                "Ada Lovelace", //Correct
                 "Mark Zuckerberg",
                 "Alan Turing",
                 "Tim Berners-Lee"
@@ -35,9 +33,8 @@ object Constants {
         val peopleQue3 = Question(
                 3,
                 "Who invented the Printing Press?",
-                R.drawable.ic_logo,
                 "Martin Cooper",
-                "Johannes Gutenberg",
+                "Johannes Gutenberg", //Correct
                 "Nikola Tesla",
                 "Albert Einstein"
         )
@@ -57,30 +54,27 @@ object Constants {
         val termQue1 = Question(
                 1,
                 "What does LAN stand for?",
-                R.drawable.ic_logo,
                 "Local Artist Network",
                 "Local Area Net",
-                "Local Area Network",
+                "Local Area Network", //Correct
                 "Local Aerial Network"
         )
 
         val termQue2 = Question(
                 2,
                 "What does RAM stand for?",
-                R.drawable.ic_logo,
                 "Ready Always Memory",
                 "Random All Memories",
                 "Read Access Memory",
-                "Random Access Memory"
+                "Random Access Memory" //Correct
         )
 
         val termQue3 = Question(
                 3,
                 "What does URL stand for?",
-                R.drawable.ic_logo,
                 "Unknown Resources Location",
                 "Unified Resource Locator",
-                "Unique Resource Locator",
+                "Unique Resource Locator", //Correct
                 "Unique Resource Level"
         )
 
@@ -99,8 +93,7 @@ object Constants {
         val deviceQue1 = Question(
                 1,
                 "Which was the first supercomputer?",
-                R.drawable.ic_logo,
-                "CDC 6600",
+                "CDC 6600", //Correct
                 "Cray-1",
                 "IBM 7030 Stretch",
                 "UNIVAC"
@@ -109,8 +102,7 @@ object Constants {
         val deviceQue2 = Question(
                 2,
                 "Which year was the first Macintosh computer released?",
-                R.drawable.ic_logo,
-                "1984",
+                "1984", //Correct
                 "1904",
                 "1990",
                 "1995"
@@ -119,9 +111,8 @@ object Constants {
         val deviceQue3 = Question(
                 3,
                 "Which devices is used to connect to the internet?",
-                R.drawable.ic_logo,
                 "Black box",
-                "Modem",
+                "Modem", //Correct
                 "USB Dongle",
                 "Wifi Antenna"
         )
