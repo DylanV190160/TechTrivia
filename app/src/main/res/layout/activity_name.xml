@@ -50,25 +50,25 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:layout_marginBottom="20dp"
                 android:textColor="@color/white"
                 android:text="Please enter your name">
             </TextView>
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="225dp"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/pink"
-                app:boxStrokeWidth="3dp"
                 app:boxStrokeColor="@color/teal"
-                app:boxBackgroundMode="outline">
+                app:boxBackgroundColor="@color/white"
+                >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
                     android:hint="Name">
                 </com.google.android.material.textfield.TextInputEditText>
 
@@ -78,8 +78,12 @@
                 android:layout_width="225dp"
                 android:layout_height="wrap_content"
                 android:text="Confirm"
-                android:textSize="18sp"
-                android:textStyle="bold">
+                android:textColor="@color/blueDark"
+                android:backgroundTint="@color/teal"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:padding="10dp">
             </Button>
         </LinearLayout>
 

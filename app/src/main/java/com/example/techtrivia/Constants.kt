@@ -6,6 +6,10 @@ object Constants {
     const val CORRECT_ANSWERS_DEVICE : String = "deviceCorrectAnswers"
     const val CORRECT_ANSWERS_TERMS : String = "termsCorrectAnswers"
 
+    const val HIGH_SCORE_PEOPLE : String = "peopleHighScore"
+    const val HIGH_SCORE_DEVICE : String = "deviceHighScore"
+    const val HIGH_SCORE_TERMS : String = "termsHighScore"
+
 
     // PEOPLE IN TECH QUESTION LIST
     fun getPeopleQuestions(): ArrayList<Question>{

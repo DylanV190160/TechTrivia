@@ -32,7 +32,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textColor="@color/white"
                 android:text="Test your technology knowledge.">
             </TextView>
@@ -64,11 +64,14 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_play"
-                android:layout_width="wrap_content"
+                android:layout_width="225dp"
                 android:layout_height="wrap_content"
                 android:text="Play"
+                android:textColor="@color/blueDark"
+                android:backgroundTint="@color/teal"
                 android:textStyle="bold"
-                android:textSize="20sp">
+                android:textSize="20sp"
+                android:padding="10dp">
             </com.google.android.material.button.MaterialButton>
 
         </LinearLayout>

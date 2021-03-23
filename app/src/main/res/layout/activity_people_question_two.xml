@@ -43,7 +43,7 @@
                 android:text="2/3"
                 android:textColorHint="#7A8089"
                 android:textColor="@color/teal"
-                android:textSize="14sp">
+                android:textSize="16sp">
             </TextView>
 
         </LinearLayout>
@@ -107,10 +107,11 @@
 
         <Button
             android:id="@+id/btn2_next_people"
-            android:layout_width="match_parent"
+            android:layout_width="225dp"
             android:layout_height="wrap_content"
             android:text="Next"
             android:textAlignment="center"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@color/blueDark"
             android:padding="10dp"

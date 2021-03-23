@@ -28,7 +28,18 @@ class DeviceResultsActivity : AppCompatActivity() {
         }
 
         val sharedPreferences = getSharedPreferences("sharedPref", Context.MODE_PRIVATE)
-        val editor = sharedPreferences.edit()
+
+        //Highscores
+        var highScoreDevice: Int = sharedPreferences.getInt(Constants.HIGH_SCORE_DEVICE, 0)
+        if (deviceCorrectAnswers > highScoreDevice) {
+
+            val editor = sharedPreferences.edit()
+
+            editor.apply {
+                putInt(Constants.HIGH_SCORE_DEVICE, deviceCorrectAnswers)
+                apply()
+            }
+        }
 
         val btn_back = findViewById<Button>(R.id.btn_back)
 

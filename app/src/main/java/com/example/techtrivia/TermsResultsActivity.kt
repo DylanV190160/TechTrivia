@@ -28,7 +28,18 @@ class TermsResultsActivity : AppCompatActivity() {
         }
 
         val sharedPreferences = getSharedPreferences("sharedPref", Context.MODE_PRIVATE)
-        val editor = sharedPreferences.edit()
+
+        //Highscores
+        var highScoreTerms: Int = sharedPreferences.getInt(Constants.HIGH_SCORE_TERMS, 0)
+        if (termsCorrectAnswers > highScoreTerms) {
+
+            val editor = sharedPreferences.edit()
+
+            editor.apply {
+                putInt(Constants.HIGH_SCORE_TERMS, termsCorrectAnswers)
+                apply()
+            }
+        }
 
         val btn_back = findViewById<Button>(R.id.btn_back)
 

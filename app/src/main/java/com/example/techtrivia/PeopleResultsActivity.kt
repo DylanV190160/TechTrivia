@@ -28,7 +28,18 @@ class PeopleResultsActivity : AppCompatActivity() {
         }
 
         val sharedPreferences = getSharedPreferences("sharedPref", Context.MODE_PRIVATE)
-        val editor = sharedPreferences.edit()
+
+        //Highscores
+        var highScorePeople: Int = sharedPreferences.getInt(Constants.HIGH_SCORE_PEOPLE, 0)
+        if (peopleCorrectAnswers > highScorePeople) {
+
+            val editor = sharedPreferences.edit()
+
+            editor.apply {
+                putInt(Constants.HIGH_SCORE_PEOPLE, peopleCorrectAnswers)
+                apply()
+            }
+        }
 
         val btn_back = findViewById<Button>(R.id.btn_back)
 

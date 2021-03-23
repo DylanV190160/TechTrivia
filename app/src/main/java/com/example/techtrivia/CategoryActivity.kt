@@ -1,11 +1,14 @@
 package com.example.techtrivia
 
 import android.content.Context
+import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.TextView
+import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_category.*
 
 class CategoryActivity : AppCompatActivity() {
@@ -20,12 +23,25 @@ class CategoryActivity : AppCompatActivity() {
         val sharedPreferences = getSharedPreferences("sharedPref", Context.MODE_PRIVATE)
         val userName = sharedPreferences.getString(Constants.USER_NAME, "Not Found")
 
-        //Set TextView to userName
         tv_greeting.text = "Hello " + userName
+
+        val deviceCorrectAnswers = sharedPreferences.getInt(Constants.HIGH_SCORE_DEVICE,0)
+        val peopleCorrectAnswers = sharedPreferences.getInt(Constants.HIGH_SCORE_PEOPLE,0)
+        val termsCorrectAnswers = sharedPreferences.getInt(Constants.HIGH_SCORE_TERMS,0)
+
+        val deviceHighScore = findViewById<TextView>(R.id.tv_deviceScore)
+        val peopleHighScore = findViewById<TextView>(R.id.tv_peopleScore)
+        val termsHighScore = findViewById<TextView>(R.id.tv_termsScore)
+
+        deviceHighScore.text = "$deviceCorrectAnswers"
+        peopleHighScore.text = "$peopleCorrectAnswers"
+        termsHighScore.text = "$termsCorrectAnswers"
+
 
         val btn_people_category = findViewById<Button>(R.id.btn_people_category)
         val btn_terms_category = findViewById<Button>(R.id.btn_terms_category)
         val btn_device_category = findViewById<Button>(R.id.btn_device_category)
+
         // PEOPLE
         btn_people_category.setOnClickListener{
             val intent = Intent(this, PeopleQuestionOneActivity::class.java)
@@ -43,5 +59,6 @@ class CategoryActivity : AppCompatActivity() {
             val intent = Intent(this, DeviceQuestionOneActivity::class.java)
             startActivity(intent)
         }
+
     }
 }
