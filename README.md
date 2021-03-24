@@ -75,7 +75,7 @@ TechTrivia is a Android Quiz application that will test you tech knowledge. The 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get started follow these insctructions to get a copy of the project up and running on your local machine for development and testing purposes.
+To get started follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
