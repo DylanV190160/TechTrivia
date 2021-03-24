@@ -1,146 +1,208 @@
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
-***
-***
-***
-*** To avoid retyping too much info. Do a search and replace for the following:
-*** github_username, repo_name, twitter_handle, email, project_title, project_description
--->
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
+<!-- MARKDOWN LINKS & IMAGES -->
+[image1]: Images/Image1.png
+[image2]: Images/Image2.png
+[image3]: Images/Image3.png
+[image4]: Images/Image4.png
+[image5]: Images/Image5.png
+[image6]: Images/Image6.png
+[image7]: Images/Image7.png
+[image8]: Images/Image8.png
 
 <!-- PROJECT LOGO -->
 <br />
-<p align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
-  <h3 align="center">project_title</h3>
+<h6 align="center">Dylan Vanhout</h6>
+<p align="center">
+<br />
+   
+  <a href="https://github.com//dylanV190160/TechTrivia">
+    <img src="Images/App Icon.png" alt="Logo" width="160" height="160">
+  </a>
+  
+  <h2 align="center">TechTrivia</h2>
 
   <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    Technology Trivia Quiz App.
   </p>
-</p>
-
-
 
 <!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-  </ol>
-</details>
+## Table of Contents
 
+- [Table of Contents](#table-of-contents)
+- [About the Project](#about-the-project)
+  - [Project Description](#project-description)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [How to install](#how-to-install)
+  - [Installation](#installation)
+- [Features and Functionality](#features-and-functionality)
+  - [Features](#features)
+  - [Functionality](#functionality)
+- [Concept Process](#concept-process)
+  - [Ideation](#ideation)
+  - [Wireframes](#wireframes)
+  - [User-flow](#user-flow)
+- [Development Process](#development-process)
+  - [Implementation](#implementation)
+    - [Challenges](#challenges)
+  - [Peer Reviews](#peer-reviews)
+    - [Feedback](#feedback)
+    - [Future Changes](#future-changes)
+- [Video Demonstration](#video-demonstration)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [Authors](#authors)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
+<!--PROJECT DESCRIPTION-->
+## About the Project
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+![image1][image1]
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+### Project Description
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
-
+TechTrivia is a Android Quiz application that will test you tech knowledge. The App was built using Android studio and Kotlin.
 
 ### Built With
 
-* []()
-* []()
-* []()
-
-
+* [Android Studio](https://developer.android.com/studio)
+* [Kotlin](https://kotlinlang.org/)
+* [GitHub](https://github.com/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
+To get started follow these insctructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Ensure that you have the latest updated version of Android Studio installed on your machine. The `Kotlin` plugin will also be required.
+
+### How to install
 
 ### Installation
+Ways to clone this repo:
 
-1. Clone the repo
+1. Android Studio </br>
+`Android Studio` -> `File` -> `New` -> `From Version Control` -> `Git`</br>
+Enter `https://github.com/dylanv190160/techtrivia.git` into the URL field and press the `Clone` button.
+
+2. Command-line + Android Studio </br>
+Run the following in the command-line to clone the project:
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/dylanv190160/techtrivia.git
    ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
+Open `Android Studio` and select `File | Open...` from the menu. Select the newly cloned directory and press `Open` button
 
+<!-- FEATURES AND FUNCTIONALITY-->
+## Features and Functionality
 
+### Features
 
-<!-- USAGE EXAMPLES -->
-## Usage
+![image2][image2]
+* Users can enter their name which will be displayed in the categories page.
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+* Validation is displayed if no name has been entered into the text field.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+![image3][image3]
 
+* Choose from 3 technology categories.
+  - The categories are People, Terminology and Devices.
 
+* Test your tech knowledge by answering the questions in each category.
+
+* Highest Score for each category is displayed below the category.
+
+![image4][image4]
+* Selete the correct answer with the radio buttons.
+  - Only one option per question is selectable.
+
+* Validation is provided when the user clicks next.
+
+* The progress bar updates occording to which question you are on.
+
+![image4][image5]
+
+* Results are displayed after all the questions have been answered.
+  
+* Alternative screens displayed depending on results obtained.
+
+* Button takes you back to the categories screen.
+
+### Functionality
+
+* `Scroll`, `Linear` and `Grid` layouts were used for the page layouts.
+* `Activities` were used to create the quiz categories and questions.
+* A `Constants` file was created to store all the questions in using an `ArrayList`.
+* Each questions activity has a `Progress Bar` to indicate to the user which question they are on.
+* `SharedPreferences` was used the store the username, results and  highest scores.
+
+<!-- CONCEPT PROCESS -->
+## Concept Process
+
+The research and planning that was done for this project.
+
+### Ideation
+
+![image5][image6]
+
+### Wireframes
+
+![image7][image7]
+
+### User-flow
+
+![image8][image8]
+
+<!-- DEVELOPMENT PROCESS -->
+## Development Process
+
+The technical implementations and functionality.
+
+### Implementation
+
+#### Challenges
+
+* Learning how to implement layouts and imagery with Kotlin and Android Studio.
+* Styling the frontend of the app. Learning the correct syntax.
+* Using `SharedPreferences` to store the highest score and username.
+* Learning how to use `Activities` and `Intent` for navigation and functionality.
+* I enjoed the project and found that I have learned alot in regards to androind app development.
+
+### Peer Reviews
+
+Feedback from other students and the lecturer.
+* Peers like the technical aspect and approaches.
+* Peers found the app to be easy to use and concise to navigate.
+* Peers found the questions to be suitable for the theme and categories.
+* Peers thought the colours matched the theme well with the dark background supporting the narrative.
+
+#### Feedback
+
+* Change the font size, style and colour to be more readable.
+* Add more imagery to the questions to possibly make it more fun and less serious.
+* Add more patterns to either the background or vectors to elevate the design.
+* Add a back button the the results page to allow the users to retun home. 
+
+#### Future Changes
+
+* Add a High Score page.
+* Add more questions to each category.
+* Add imagery to the questions and patterns to the background.
+* Add a button to change the username and a button to clear the scores.
+* Add a App icon.
+* Add the option to continue as the previous user or create a new user.
+
+<!-- VIDEO DEMONSTRATION -->
+## Video Demonstration
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
-
-
+See the [open issues](https://github.com/dylanv190160/techtrivia/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -153,46 +215,26 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+<!-- AUTHORS -->
+## Authors
 
+* **Dylan Vanhout**
 
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-
-
-<!-- CONTACT -->
+<!-- LICENSE -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-
+* **Dylan Vanhout** - 190160@virtualwindow.co.za
+* **Project Link** - https://github.com/dylanv190160/techtrivia/
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
-* []()
-* []()
-
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/github_username
+* [Android Documenation](https://developer.android.com/docs)
+* [StackOverflow](https://stackoverflow.com/)
+* [Flaticon](https://www.flaticon.com/)
+* My lecturer Armand Pretorius.
