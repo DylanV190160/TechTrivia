@@ -237,4 +237,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 * [Android Documenation](https://developer.android.com/docs)
 * [StackOverflow](https://stackoverflow.com/)
 * [Flaticon](https://www.flaticon.com/)
+* [Plagiarism Form](https://drive.google.com/file/d/1fg83FjpcmC1IMZ6R5DzasAfoH8IYlq0y/view?usp=sharing)
 * My lecturer Armand Pretorius.
